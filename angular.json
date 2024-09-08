@@ -33,6 +33,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "https://franxxxe.github.io/MyPortfolio/",
               "budgets": [
                 {
                   "type": "initial",
