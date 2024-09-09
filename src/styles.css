@@ -1,1 +1,42 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "suse-regular";
+  src: url(./assets/fonts/SUSE-Regular.ttf);
+}
+
+:root{
+  --bg-color-white-1: #ffffff;
+  --bg-color-white-2: #e6e6e6;
+  --fontSuse-regular: suse-regular;
+  --shadowEffect-1: 0 0 5px #0000005d;
+  --border1: 1px solid #0000002f;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 0px;
+}
+::-webkit-scrollbar-track {
+  background: #97979700;
+}
+::-webkit-scrollbar-thumb {
+  background: #bdbdbd7a;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1c1c1ca7;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: var(--bg-color-white-1);
+  font-family: var(--fontSuse-regular);
+}
+
+
+li{
+  display: block;
+}
