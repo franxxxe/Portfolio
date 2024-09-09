@@ -9,10 +9,21 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+  width: fit-content;
   overflow: auto;
   box-shadow: var(--shadowEffect-1);
   border-radius: 8px;
   padding: 3px;
+  animation-name: sidebar-container;
+  animation-duration: 1.5s;
+  animation-timing-function: ease; /* Timing function for the animation */
+  animation-iteration-count: 1; /* Number of times the animation should repeat */
+}
+
+@keyframes sidebar-container {
+  0%{
+    margin-left: -200px;
+  }
 }
 
 .sidebar-container .box1{
