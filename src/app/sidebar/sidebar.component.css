@@ -1,8 +1,8 @@
-.box{
+/* .box{
   min-height: 40px;
   aspect-ratio: 1/1;
   border: 1px solid black;
-}
+} */
 
 
 .sidebar-container{
@@ -10,14 +10,15 @@
   flex-direction: column;
   height: 100%;
   width: fit-content;
-  overflow: auto;
+  /* width: 100%; */
+  /* overflow: auto; */
   box-shadow: var(--shadowEffect-1);
   border-radius: 8px;
   padding: 3px;
   animation-name: sidebar-container;
   animation-duration: 1.5s;
-  animation-timing-function: ease; /* Timing function for the animation */
-  animation-iteration-count: 1; /* Number of times the animation should repeat */
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
 }
 
 @keyframes sidebar-container {
@@ -34,15 +35,41 @@
 .sidebar-container .box1 .profile-img{
   height: 40px;
   width: 40px;
-  border-radius: 50%;
-  border: var(--border1);
+  position: relative;
+  z-index: 100;
+}
+
+
+.sidebar-container .box1 .profile-img img{
+  /* height: 40px; */
+  height: 100%;
+  aspect-ratio: 1/1;
+  border: 2px solid white;
   overflow: hidden;
   box-shadow: var(--shadowEffect-1);
 }
 
-.sidebar-container .box1 .profile-img img{
-  height: 100%;
-  aspect-ratio: 1/1;
+.profile-hidden-div{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.profile-hidden-div h4{
+  display: none;
+}
+
+.sidebar-container .box1 .profile-img:hover .profile-hidden-div{
+  display: flex;
+  height: 180px;
+  width: 180px;
+  background-color: var(--bg-color-white-1);
+  box-shadow: var(--shadowEffect-1);
+  padding: 5px;
+}
+
+.sidebar-container .box1 .profile-img:hover .profile-hidden-div h4{
+  display: flex;
 }
 
 .sidebar-container .box2{
@@ -54,11 +81,15 @@
   overflow: auto;
 }
 
-.sidebar-container .box2 .box{
-  height: 50px;
-  width: 100%;
-  background-color: blue;
-  /* aspect-ratio: 1/1; */
+.box2-li{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: grey;
+}
+
+.box2-li h4{
+  display: none;
 }
 
 

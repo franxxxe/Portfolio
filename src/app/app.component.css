@@ -7,8 +7,11 @@
 
 app-sidebar{
   height: 100%;
-  min-width: 80px;
-  max-width: 80px;
+  /* min-width: 80px;
+  max-width: 80px; */
+
+  width: 80px;
+  /* min-width: 230px; */
   padding: 10px;
   background-color: var(--bg-color-white-2);
   box-shadow: 0 0 5px 5px #0000005d;
@@ -21,10 +24,10 @@ app-sidebar{
 app-main-container{
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  /* padding: 10px; */
   overflow: auto;
   gap: 20px;
   height: 100%;
   width: 100%;
-  /* background-color: lightgreen; */
+  background-color: var(--bg-color-white-2);
 }

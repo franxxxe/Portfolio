@@ -10,7 +10,3 @@ import { Component } from '@angular/core';
 export class SidebarComponent {
 
 }
-
-export class MyComponent {
-  imageUrl = './images/linkedinLogo.png';
-}
