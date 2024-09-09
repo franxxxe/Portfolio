@@ -36,12 +36,22 @@
   height: 40px;
   width: 40px;
   position: relative;
-  z-index: 100;
+  z-index: 1;
+  /* transition: 2s; */
 }
 
+.profile-hidden-div{
+  position: relative;
+  width: 40px;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  transition: 1.5s;
+  overflow: hidden;
+}
 
-.sidebar-container .box1 .profile-img img{
-  /* height: 40px; */
+.sidebar-container .box1 .profile-hidden-div img{
   height: 100%;
   aspect-ratio: 1/1;
   border: 2px solid white;
@@ -49,28 +59,48 @@
   box-shadow: var(--shadowEffect-1);
 }
 
-.profile-hidden-div{
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+
+.profile-hidden-div .hidden-div{
+  height: fit-content;
+  padding: 4px;
+  display: none;
+  transition: 10s;
+  font-size: 0;
+  text-wrap: nowrap;
+  box-shadow: var(--shadowEffect-1);
+  width: 100%;
 }
 
-.profile-hidden-div h4{
-  display: none;
+@keyframes hidden-div {
+  0%{
+    opacity: 0;
+  }
 }
 
 .sidebar-container .box1 .profile-img:hover .profile-hidden-div{
+  position: absolute;
+  aspect-ratio: 1/1.2;
   display: flex;
-  height: 180px;
+  height: fit-content;
   width: 180px;
   background-color: var(--bg-color-white-1);
   box-shadow: var(--shadowEffect-1);
   padding: 5px;
+  transform: rotate(360deg);
+  padding-bottom: 50px;
 }
 
-.sidebar-container .box1 .profile-img:hover .profile-hidden-div h4{
-  display: flex;
+.sidebar-container .box1 .profile-hidden-div:hover img{
+  min-height: 100%;
+  padding: 10px;
 }
+
+.sidebar-container .box1 .profile-img:hover .hidden-div{
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
 
 .sidebar-container .box2{
   display: flex;
