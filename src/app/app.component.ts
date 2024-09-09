@@ -11,5 +11,10 @@ import { MainContainerComponent } from './main-container/main-container.componen
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'MyPortfolio';
+  title = 'My Portfolio';
+}
+
+
+export class MyComponent {
+  imageUrl = '../assets/images/linkedinLogo.png';
 }
