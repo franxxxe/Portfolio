@@ -1,17 +1,19 @@
 @font-face {
   font-family: "suse-regular";
-  src: url(./assets/fonts/SUSE-Regular.ttf);
+  /* src: url(./assets/fonts/SUSE-Regular.ttf); */
+  src: url(./assets/fonts/SUSE-ExtraLight.ttf);
 }
 
 :root{
   --bg-color-white-1: #ffffff;
-  --bg-color-white-2: #e6e6e6;
+  --bg-color-white-2: #f9f9f9;
   --fontSuse-regular: suse-regular;
-  --shadowEffect-1: 0 0 5px #0000005d;
+  --fontColor1: #2e2e2e;
+  --shadowEffect-1: 0 0 5px #0000002f;
   --border1: 1px solid #0000002f;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 4px;
   height: 0px;
 }
@@ -24,7 +26,7 @@
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #1c1c1ca7;
-}
+} */
 
 
 *{
@@ -32,11 +34,98 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  background-color: var(--bg-color-white-1);
+  /* background-color: var(--bg-color-white-1); */
   font-family: var(--fontSuse-regular);
+  color: var(--fontColor1);
 }
 
 
 li{
   display: block;
+}
+
+button{
+  all: unset;
+  padding: 10px 20px;
+  border: var(--border1);
+  cursor: pointer;
+}
+
+table{
+  border-collapse: collapse;
+}
+td{
+  padding: 5px;
+  border: var(--border1);
+}
+
+/* ANIMATION */
+.ad1{
+  animation-duration: 1.4s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-name: ad1;
+  animation-delay: 1s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+
+@keyframes ad1 {
+  0%{
+    opacity: 0;
+    margin-top: 100px;
+    visibility: hidden;
+  }
+  100%{
+    visibility: visible;
+  }
+}
+.ad2{
+  animation-duration: 1.4s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-name: ad1;
+  animation-delay: 1.5s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+
+@keyframes ad2 {
+  0%{
+    opacity: 0;
+    margin-top: 100px;
+    visibility: hidden;
+  }
+  100%{
+    visibility: visible;
+  }
+}
+.ad3{
+  animation-duration: 1.4s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-name: ad1;
+  animation-delay: 2s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+
+@keyframes ad3 {
+  0%{
+    opacity: 0;
+    margin-top: 100px;
+    visibility: hidden;
+  }
+  100%{
+    visibility: visible;
+  }
+}
+
+
+
+@media only screen and (max-width: 480px) {
+  button{
+    font-size: .9rem;
+    padding: 7px 10px;
+  }
 }
