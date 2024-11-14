@@ -377,3 +377,8 @@
   }
 
 }
+
+.box2-content-div{
+  /* background-color: yellow; */
+  display: none;
+}
