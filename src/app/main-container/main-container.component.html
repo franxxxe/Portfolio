@@ -65,18 +65,20 @@
       <div class="box2">
         <div class="box2-header">
           <div class="box2-navigation-div">
-            <div class="navigation-list">All</div>
-            <div class="navigation-list">Web Development</div>
-            <div class="navigation-list">Software Development</div>
-            <div class="navigation-list">Multimedia</div>
-            <div class="navigation-list">Technical Skills</div>
+            <div class="navigation-list navSkillId1" (click)="navSkill('1')">All</div>
+            <div class="navigation-list navSkillId2" (click)="navSkill('2')">Web Development</div>
+            <div class="navigation-list navSkillId3" (click)="navSkill('3')">Software Development</div>
+            <div class="navigation-list navSkillId4" (click)="navSkill('4')">Multimedia</div>
+            <div class="navigation-list navSkillId5" (click)="navSkill('5')">Technical Skills</div>
           </div>
         </div>
+
+        <!-- <div #myDiv class="div1">Content</div> -->
 
 
         <div class="box2-content">
 
-          <div class="box2-content-div1">
+          <div class="box2-content-div1" [ngClass]="{'Hidden': selectedSkill !== '1'}">
             <h4>What I Do</h4>
             <br>
 
@@ -97,16 +99,16 @@
 
           </div>
 
-          <div class="box2-content-div Hidden box2-content-div2">
+          <div class="box2-content-div Hidden box2-content-div2" [ngClass]="{'Hidden': selectedSkill !== '2'}">
             Div2
           </div>
-          <div class="box2-content-div Hidden box2-content-div3">
+          <div class="box2-content-div Hidden box2-content-div3" [ngClass]="{'Hidden': selectedSkill !== '3'}">
             Div3
           </div>
-          <div class="box2-content-div Hidden box2-content-div4">
+          <div class="box2-content-div Hidden box2-content-div4" [ngClass]="{'Hidden': selectedSkill !== '4'}">
             Div4
           </div>
-          <div class="box2-content-div Hidden box2-content-div5">
+          <div class="box2-content-div Hidden box2-content-div5" [ngClass]="{'Hidden': selectedSkill !== '5'}">
             Div5
           </div>
 

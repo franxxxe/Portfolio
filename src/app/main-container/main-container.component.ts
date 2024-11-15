@@ -20,17 +20,37 @@ export class MainContainerComponent {
   @ViewChild('section7') section7!: ElementRef;
   @ViewChild('section8') section8!: ElementRef;
 
+  // @ViewChild('myDiv') myDiv!: ElementRef;
 
   @Output() sectionVisible = new EventEmitter<string>();
 
+
+
+  selectedSkill: string = '1'; // Default to 'All'
+
+  // Method to handle the navigation click
+  navSkill(navId: string): void {
+    this.selectedSkill = navId;
+  }
+
+
+
+
   ngAfterViewInit() {
+    //
+    // const className = this.myDiv.nativeElement.className;
+    // console.log(className);  // Logs the class name
+
+
+
+
+
+    //
     const options = {
       root: null,
       threshold: 0.9,
     };
-
     const observer = new IntersectionObserver(this.handleIntersect.bind(this), options);
-
     // Observe each section
     observer.observe(this.section1.nativeElement);
     observer.observe(this.section2.nativeElement);
@@ -82,6 +102,15 @@ export class MainContainerComponent {
         break;
     }
   }
+
+
+
+
+
+  // navSkill(navId: string) {
+  //   console.log(`Navigating with ID: ${navId}`);
+
+  // }
 }
 
 

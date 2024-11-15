@@ -185,7 +185,6 @@
 
 .box2-content-div1{
   display: flex;
-  /* display: none; */
   flex-direction: column;
 }
 
@@ -193,9 +192,13 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  /* background-color: yellow; */
+  transition: opacity 0.5s ease;
+  opacity: 0;
 }
 
+.box2-content-div:not(.Hidden) {
+  opacity: 1;
+}
 
 
 /* FOOTER */
