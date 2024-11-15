@@ -4,7 +4,7 @@
 
     <div class="div-container1 ad1">
       <div class="box1 ">
-        <h1>About Me</h1>
+        <h1>About Me!</h1>
         <div class="box-name">
           <h2>France Joshua</h2>
           <h2>Alfelor</h2>
@@ -47,13 +47,13 @@
           </div>
         </div>
         <div class="button-flex">
-          <button>Download CV</button>
+          <button>Download CV ></button>
           <button>Contact</button>
         </div>
 
-        <div class="absolute-div ad3">
+        <!-- <div class="absolute-div ad3">
           <h1>France</h1>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -68,7 +68,7 @@
             <div class="navigation-list" [ngClass]="{'activeNav': selectedNav == '1'}" (click)="navSkill('1')">All</div>
             <div class="navigation-list" [ngClass]="{'activeNav': selectedNav == '2'}" (click)="navSkill('2')">Web Development</div>
             <div class="navigation-list" [ngClass]="{'activeNav': selectedNav == '3'}" (click)="navSkill('3')">Software Development</div>
-            <div class="navigation-list" [ngClass]="{'activeNav': selectedNav == '4'}" (click)="navSkill('4')">Multimedia</div>
+            <div class="navigation-list" [ngClass]="{'activeNav': selectedNav == '4'}" (click)="navSkill('4')">Creative Design</div>
             <div class="navigation-list" [ngClass]="{'activeNav': selectedNav == '5'}" (click)="navSkill('5')">Technical Skills</div>
           </div>
         </div>
@@ -79,37 +79,139 @@
         <div class="box2-content">
 
           <div class="box2-content-div1" [ngClass]="{'Hidden': selectedSkill !== '1'}">
-            <h4>What I Do</h4>
+            <h4>What I Do?</h4>
             <br>
 
             <div class="whatIDo-container">
               <div class="whatIDo-boxCard">
-                <h4>Web Developer</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, voluptates! Culpa quos facere temporibus deleniti cum atque dignissimos. Dolorum iure a deserunt. Illo, nihil ullam.</p>
+                <div class="whatIDo-boxCardDiv1">
+                  <h4>Web & Software Development</h4>
+                  <p>To leverage web and software development expertise in creating innovative, efficient, and user-friendly solutions that drive business growth and enhance user experiences.</p>
+                </div>
+                <div class="whatIDo-Div">
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Bootstrap</li>
+                    <li>Tailwind</li>
+                    <li>Angular</li>
+                    <li>React</li>
+                    <li>PHP</li>
+                    <li>Laravel</li>
+                    <li>.NET</li>
+                    <li>AJAX</li>
+                    <li>JSON</li>
+                    <li>Java</li>
+                    <li>C++</li>
+                    <li>Visual Basic</li>
+                  </ul>
+                </div>
               </div>
               <div class="whatIDo-boxCard">
-                <h4>UI/UX Designer</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, repudiandae, amet accusamus cum velit eligendi obcaecati ipsum recusandae eos sapiente error aliquid dicta ipsa quod cupiditate, aut fuga culpa dolorem?</p>
+                <div class="whatIDo-boxCardDiv1">
+                  <h4>Creative Design</h4>
+                  <p>To utilize creative design expertise in crafting visually compelling graphics, engaging multimedia content, and innovative designs that effectively communicate and captivate audiences.</p>
+                </div>
+                <div class="whatIDo-Div">
+                  <ul>
+                    <li>Figma</li>
+                    <li>Photoshop</li>
+                    <li>Canva</li>
+                    <li>Gimp</li>
+                    <li>Capcut</li>
+                    <li>CupCut</li>
+                    <li>Filmora</li>
+                  </ul>
+                </div>
               </div>
               <div class="whatIDo-boxCard">
-                <h4>Technical Skills</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, repudiandae, amet accusamus cum velit eligendi error aliquid dicta ipsa quod cupiditate, aut fuga culpa dolorem?</p>
+                <div class="whatIDo-boxCardDiv1">
+                  <h4>Technical Skills</h4>
+                  <p>To apply technical skills in troubleshooting, hardware debugging, and IT solutions, ensuring seamless system functionality and efficient technical support for organizational success.</p>
+                </div>
+                <div class="whatIDo-Div">
+                  <ul>
+                    <li>MS Word</li>
+                    <li>MS Excel</li>
+                    <li>MS PowerPoint</li>
+                    <li>Hardware troubleshooting and debugging</li>
+                  </ul>
+                </div>
               </div>
             </div>
 
           </div>
 
           <div class="box2-content-div Hidden box2-content-div2" [ngClass]="{'Hidden': selectedSkill !== '2'}">
-            Div2
+            <div class="skillsDiv2">
+              <h4>Frontend Development</h4>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
+                <li>Tailwind</li>
+              </ul>
+              <h4>Frameworks & Libraries</h4>
+              <ul>
+                <li>Angular</li>
+                <li>React</li>
+              </ul>
+              <h4>Backend Development</h4>
+              <ul>
+                <li>PHP</li>
+                <li>Laravel</li>
+                <li>.NET</li>
+              </ul>
+              <h4>Additional Technologies</h4>
+              <ul>
+                <li>AJAX</li>
+                <li>JSON</li>
+              </ul>
+            </div>
           </div>
           <div class="box2-content-div Hidden box2-content-div3" [ngClass]="{'Hidden': selectedSkill !== '3'}">
-            Div3
+            <div class="skillsDiv2">
+              <h4>Languages</h4>
+              <ul>
+                <li>Java</li>
+                <li>C++</li>
+                <li>Visual Basic</li>
+              </ul>
+            </div>
           </div>
           <div class="box2-content-div Hidden box2-content-div4" [ngClass]="{'Hidden': selectedSkill !== '4'}">
-            Div4
+            <div class="skillsDiv2">
+              <h4>Design Software</h4>
+              <ul>
+                <li>Figma</li>
+                <li>Photoshop</li>
+                <li>Canva</li>
+                <li>Gimp</li>
+                <li>Capcut</li>
+              </ul>
+              <h4>Video Editing</h4>
+              <ul>
+                <li>CupCut</li>
+                <li>Filmora</li>
+              </ul>
+            </div>
           </div>
           <div class="box2-content-div Hidden box2-content-div5" [ngClass]="{'Hidden': selectedSkill !== '5'}">
-            Div5
+
+            <div class="skillsDiv2">
+              <h4>Hardware & Debugging</h4>
+              <ul>
+                <li>Hardware troubleshooting and debugging</li>
+              </ul>
+              <h4>Software Tools</h4>
+              <ul>
+                <li>MS Word</li>
+                <li>MS Excel</li>
+                <li>MS PowerPoint</li>
+              </ul>
+            </div>
           </div>
 
 

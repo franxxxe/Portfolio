@@ -207,6 +207,34 @@
   opacity: 1;
 }
 
+.skillsDiv2 h4{
+  color: var(--fontColor2);
+}
+
+.skillsDiv2 ul{
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding-top: 3px;
+}
+
+.skillsDiv2 ul li{
+  padding: 5px;
+  border: var(--border1);
+  background-color: var(--bg-color-white-1);
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
 
 /* FOOTER */
 .main-footer{
@@ -287,14 +315,49 @@
   border: var(--border1);
   padding: 10px;
   border-radius: 4px;
-  max-width: 400px;
+  max-width: 350px;
+  /* width: 100%; */
+  background-color: var(--bg-color-white-1);
+  font-size: .9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+.whatIDo-boxCardDiv1{
+  /* overflow: auto; */
+  /* max-width: 300px; */
+  padding: 5px 5px 0 5px;
+  margin-bottom: 5px;
+}
+
+.whatIDo-Div{
+  width: 100%;
+  overflow: auto;
+}
+
+.whatIDo-Div ul{
+  padding: 4px;
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  /* overflow: auto; */
+}
+
+.whatIDo-Div ul li{
+  padding: 5px;
+  border: var(--border1);
+  font-size: 14px;
+  border-radius: 4px;
+  text-wrap: nowrap;
   background-color: var(--bg-color-white-1);
 }
 
-
-.whatIDo-boxCard{
-  font-size: .9rem;
+.whatIDo-Div::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
 }
+
 
 
 
@@ -414,6 +477,16 @@
   .button-flex, .box2-flex-div{
     z-index: 2;
   }
+
+
+  .whatIDo-Div ul{
+    flex-wrap: nowrap;
+  }
+
+
+
+
+
 
 }
 
