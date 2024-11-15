@@ -13,6 +13,7 @@
 .box-container{
   min-height: 100%;
   border-bottom: var(--border1);
+  position: relative;
 }
 
 .div-container1{
@@ -305,7 +306,7 @@
   .div-container1 .box1{
     flex-direction: column;
     align-items: start;
-    padding: 20px 10px;
+    padding: 10px 20px;
   }
 
   .div-container1 .box2{
@@ -332,6 +333,7 @@
   .div-container1 .box-name{
     display: flex;
     gap: 5px;
+    font-size: 12px;
   }
 
   .box2-flex-div{
@@ -351,8 +353,6 @@
 
 
   .box-container{
-    /* min-height: fit-content; */
-    /* background-color: yellow; */
     font-size: 18px;
   }
 
@@ -384,6 +384,25 @@
   .whatIDo-container{
     flex-direction: column;
     gap: 8px;
+  }
+
+
+  .absolute-div{
+    position: absolute;
+    bottom: 80px;
+    right: 20px;
+    z-index: 0;
+  }
+  .absolute-div h1{
+    text-wrap: nowrap;
+    font-size: 109px;
+    color: #84848406;
+    text-shadow: 0 0 2px #0000000c;
+    transform: rotate(-40deg);
+  }
+
+  .button-flex, .box2-flex-div{
+    z-index: 2;
   }
 
 }

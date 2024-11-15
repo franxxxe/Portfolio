@@ -49,6 +49,7 @@ button{
   padding: 10px 20px;
   border: var(--border1);
   cursor: pointer;
+  background-color: var(--bg-color-white-1);
 }
 
 table{
