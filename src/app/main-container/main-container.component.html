@@ -65,11 +65,11 @@
       <div class="box2">
         <div class="box2-header">
           <div class="box2-navigation-div">
-            <div class="navigation-list navSkillId1" (click)="navSkill('1')">All</div>
-            <div class="navigation-list navSkillId2" (click)="navSkill('2')">Web Development</div>
-            <div class="navigation-list navSkillId3" (click)="navSkill('3')">Software Development</div>
-            <div class="navigation-list navSkillId4" (click)="navSkill('4')">Multimedia</div>
-            <div class="navigation-list navSkillId5" (click)="navSkill('5')">Technical Skills</div>
+            <div class="navigation-list" [ngClass]="{'activeNav': selectedNav == '1'}" (click)="navSkill('1')">All</div>
+            <div class="navigation-list" [ngClass]="{'activeNav': selectedNav == '2'}" (click)="navSkill('2')">Web Development</div>
+            <div class="navigation-list" [ngClass]="{'activeNav': selectedNav == '3'}" (click)="navSkill('3')">Software Development</div>
+            <div class="navigation-list" [ngClass]="{'activeNav': selectedNav == '4'}" (click)="navSkill('4')">Multimedia</div>
+            <div class="navigation-list" [ngClass]="{'activeNav': selectedNav == '5'}" (click)="navSkill('5')">Technical Skills</div>
           </div>
         </div>
 

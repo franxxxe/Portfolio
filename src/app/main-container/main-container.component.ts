@@ -19,33 +19,21 @@ export class MainContainerComponent {
   @ViewChild('section6') section6!: ElementRef;
   @ViewChild('section7') section7!: ElementRef;
   @ViewChild('section8') section8!: ElementRef;
-
-  // @ViewChild('myDiv') myDiv!: ElementRef;
-
   @Output() sectionVisible = new EventEmitter<string>();
 
 
-
-  selectedSkill: string = '1'; // Default to 'All'
+  selectedSkill: string = '1';
+  selectedNav: string = '1';
 
   // Method to handle the navigation click
   navSkill(navId: string): void {
     this.selectedSkill = navId;
+    this.selectedNav = navId;
   }
 
 
-
-
   ngAfterViewInit() {
-    //
-    // const className = this.myDiv.nativeElement.className;
-    // console.log(className);  // Logs the class name
-
-
-
-
-
-    //
+    // OBSERVER
     const options = {
       root: null,
       threshold: 0.9,
@@ -102,15 +90,6 @@ export class MainContainerComponent {
         break;
     }
   }
-
-
-
-
-
-  // navSkill(navId: string) {
-  //   console.log(`Navigating with ID: ${navId}`);
-
-  // }
 }
 
 
